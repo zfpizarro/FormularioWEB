@@ -1,0 +1,68 @@
+# ============================================
+# PYTHON / FLASK
+# ============================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+public/bd.py
+
+# Archivos sensibles
+.env
+*.pem
+*.crt
+*.key
+
+# Logs temporales
+logs/
+sap_logs/
+
+# Bases de datos locales
+*.sqlite3
+*.db
+*.db-journal
+
+# ============================================
+# CARPETAS INTERNAS QUE NO SE SUBEN
+# ============================================
+uploads/
+outstanding/
+results/
+results_request/
+uploads_cotizacion/
+pdf/
+imgs/
+
+# ============================================
+# REACT / NODE / VITE
+# ============================================
+node_modules/
+dist/
+.vite/
+.cache/
+*.env.local
+*.env.production.local
+*.env.development.local
+# ============================================
+# TESTS
+# ============================================
+pytest_cache/
+coverage/
+.coverage
+
+# ============================================
+# VSCODE / IDE
+# ============================================
+.vscode/
+.idea/
+*.code-workspace
+
+# ============================================
+# WINDOWS / MISC
+# ============================================
+*.log
+*.tmp
+*.bak
+.desktop.ini
+Thumbs.db
+.DS_Store

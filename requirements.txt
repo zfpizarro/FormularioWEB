@@ -1,0 +1,15 @@
+#BACK
+Flask==3.0.3
+Flask-Cors==4.0.0
+python-dotenv==1.0.1
+openai==1.42.0
+requests==2.32.3
+urllib3==2.2.2
+pyodbc==5.1.0
+Werkzeug==3.0.3
+flask-jwt-extended==4.7.1
+pip install bcrypt==5.0.0
+
+#FRONT
+pip install pandas openpyxl
+npm install react-table @mui/material @emotion/react @emotion/styled @mui/icons-material lucide-react @tanstack/react-table @mui/x-charts vite @vitejs/plugin-react --save-dev

@@ -1,0 +1,113 @@
+/* Fondo centrado y limpio */
+.login-container {
+  background-color: #f8f9fa;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tarjeta principal */
+.login-card {
+  display: flex;
+  width: 850px;
+  height: 500px;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen izquierda */
+.login-image {
+  flex: 1;
+  background-image: url("https://cmsg.cl/wp-content/uploads/2022/03/talcuna_4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Contenedor del formulario */
+.login-form {
+  flex: 1;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.login-form h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.login-form h2 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Inputs */
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #888;
+  box-shadow: 0 0 5px rgba(128, 127, 125, 0.4);
+}
+
+/* Botón */
+.login-form button {
+  background-color: #807f7d;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: #f3b309;
+}
+
+/* Nota y logo */
+.note {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.logo-footer {
+  width: 160px;
+  margin: 20px auto 0;
+  display: block;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .login-card {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+  }
+
+  .login-image {
+    height: 200px;
+  }
+
+  .login-form {
+    padding: 30px 20px;
+  }
+}

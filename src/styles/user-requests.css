@@ -1,0 +1,194 @@
+/* === CONTENEDOR PRINCIPAL === */
+.user-requests-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 80px);
+  background-color: #f4f6f9;
+  padding: 40px 20px;
+}
+
+/* === CARD PRINCIPAL === */
+.user-requests-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 40px 50px;
+  width: 95%;
+  max-width: 1100px;
+}
+
+/* === TÍTULOS === */
+.user-requests-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.user-requests-subtitle {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 35px;
+}
+
+/* === OPCIONES (CARDS INTERNAS) === */
+.user-requests-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-around;
+}
+
+.user-request-option {
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  width: 310px;
+  text-align: center;
+  padding: 25px 20px;
+  transition: all 0.3s ease;
+}
+
+.user-request-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === ICONOS === */
+.user-request-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #fff;
+}
+
+.user-request-icon.create {
+  background-color: #2b7cff;
+}
+
+.user-request-icon.state {
+  background-color: #2ecc71;
+}
+
+.user-request-icon.roles {
+  background-color: #9b59b6;
+}
+
+/* === TEXTOS === */
+.user-request-title {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.user-request-desc {
+  color: #666;
+  font-size: 0.9rem;
+  min-height: 40px;
+  margin-bottom: 20px;
+}
+
+/* === BOTÓN === */
+.user-request-btn {
+  background-color: #0d1b2a;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.user-request-btn:hover {
+  background-color: #1b263b;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .user-requests-options {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+.div1 {
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+.div4 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 5;
+}
+        
+
+.user-requests-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sap-logo {
+  width: 140px;
+  height: auto;
+  margin-left: 15px;
+}
+
+/* === Círculos === */
+.user-request-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+  background: #e5e7eb;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.user-request-icon img {
+  width: 55%;
+  height: 55%;
+  object-fit: contain;
+}
+
+/* Colores de cada tipo */
+.user-request-icon.create {
+  background-color: #3b82f6; /* azul */
+}
+
+.user-request-icon.state {
+  background-color: #10b981; /* verde */
+}
+
+.user-request-icon.roles {
+  background-color: #8b5cf6; /* morado */
+}
